@@ -1,5 +1,5 @@
-.border {
-  border: 1px solid black;
+.outline {
+  outline: 1px solid black;
 }
 .grid-container {
   display: flex;
@@ -7,11 +7,11 @@
   flex-wrap: wrap;
   width: 1600px;
   height: 1600px;
-  border: 1px solid black;
+  outline: 1px solid black;
   margin: auto;
 }
 .grid__item {
-  flex: 1 0 100px;
+  flex: 0 0 100px;
   margin: 0;
   padding: 0;
 }
