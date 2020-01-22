@@ -1,6 +1,17 @@
-.border {
-  border: 1px solid black;
+.outline {
+  outline: 1px solid black;
 }
 .grid-container {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1600px;
+  height: 1600px;
+  outline: 1px solid black;
+  margin: auto;
+}
+.grid__item {
+  flex: 0 0 100px;
+  margin: 0;
+  padding: 0;
 }
