@@ -11,33 +11,41 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class="header">Etch a sketch</header>
+    <h1 class="header">Etch a Sketch</h1>
     <div class="js-radio-buttons section-button">
-      <form>
+      <label for="black">
         <input
-          class="button__radio"
+        id="black"
+          class="radio"
           type="radio"
           name="color"
           value="black"
           checked
         />
         Black
+      </label>
+      <label for="random">
         <input
-          class="button__radio"
+        id="random"
+          class="radio"
           type="radio"
           name="color"
           value="random"
         />
         Random RGB
+      </label>
+      <label for="gradient">
         <input
-          class="button__radio"
+        id="gradient"
+          class="radio"
           type="radio"
           name="color"
           value="gradient"
         />
-        Gradient Black</form></br>
-      </form>
-      <button class="js-resize-grid button__submit" type="submit">Resize grid</button>
+        Gradient Black
+      </label>
+      </br>
+      <button class="js-resize-grid button" type="button">Resize grid</button>
     </div>
 
     <div class="js-grid-container section-grid"></div>
