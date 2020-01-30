@@ -3,8 +3,9 @@
   const resizeButton = document.querySelector(".js-resize-grid");
   const radioButton = document.querySelector(".js-radio-buttons");
   let colorMode = "black";
+  const defaultGrid = 16;
 
-  buildGrid(16);
+  buildGrid(defaultGrid);
 
   radioButton.addEventListener("change", function(e) {
     colorMode = e.target.value;
@@ -13,10 +14,10 @@
   container.addEventListener("mouseover", drawPixels);
 
   resizeButton.addEventListener("click", function(e) {
-    const cellNumber = window.prompt("Enter a number 1-100?");
+    let cellNumber = window.prompt("Enter a number 1-100?");
     if (cellNumber <= 0 || cellNumber > 100) {
       alert("Wrong number, please, try again!");
-      cellNumber = 16;
+      cellNumber = defaultGrid;
     }
     container.innerHTML = "";
     buildGrid(cellNumber);
