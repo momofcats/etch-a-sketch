@@ -1,20 +1,20 @@
 body {
   font-family: "Playfair Display", serif;
-  font-size: 3vh;
+  font-size: 28px;
   background: #0000ff2b;
   text-align: center;
 }
 
 .button {
-  padding: 1vh;
+  padding: 10px;
   border-radius: 8px;
-  margin-bottom: 3vh;
-  margin-top: 3vh;
+  margin-bottom: 30px;
+  margin-top: 30px;
   background: #3f51b563;
   border-style: none;
 }
 .radio {
-  margin-left: 2vw;
+  margin-left: 20px;
 }
 
 .section-grid {
@@ -39,16 +39,9 @@ body {
 }
 
 .header {
-  font-size: 6vh;
+  font-size: 50px;
+  margin-top: 30px;
 }
 .section-button {
-  margin-top: 3vh;
-}
-.top-section {
-  height: 25vh;
-  width: 100vw;
-}
-.bottom-section {
-  height: 10vh;
-  width: 100vw;
+  margin-top: 50px;
 }

@@ -3,7 +3,6 @@
   const resizeButton = document.querySelector(".js-resize-grid");
   const radioButton = document.querySelector(".js-radio-buttons");
   let colorMode = "black";
-  const defaultGrid = 16;
 
   buildGrid(16);
 
@@ -17,7 +16,7 @@
     const cellNumber = window.prompt("Enter a number 1-100?");
     if (cellNumber <= 0 || cellNumber > 100) {
       alert("Wrong number, please, try again!");
-      cellNumber = defaultGrid;
+      cellNumber = 16;
     }
     container.innerHTML = "";
     buildGrid(cellNumber);
