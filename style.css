@@ -19,8 +19,8 @@ body {
 
 .section-grid {
   display: flex;
-  width: 65vh;
-  height: 65vh;
+  width: calc(100vh - 350px);
+  height: calc(100vh - 350px);
   border-left: 1px solid black;
   border-top: 1px solid black;
   margin: auto;
