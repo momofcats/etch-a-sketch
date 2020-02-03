@@ -8,9 +8,44 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="js-grid-container grid-container"></div>
+    <h1 class="header">Etch a Sketch</h1>
+    <div class="js-radio-buttons section-button">
+      <label>
+        <input
+          class="radio"
+          type="radio"
+          name="color"
+          value="black"
+          checked
+        />
+        Black
+      </label>
+      <label>
+        <input
+          class="radio"
+          type="radio"
+          name="color"
+          value="random"
+        />
+        Random RGB
+      </label>
+      <label>
+        <input
+          class="radio"
+          type="radio"
+          name="color"
+          value="gradient"
+        />
+        Gradient Black
+      </label>
+      </br>
+      <button class="js-resize-grid button" type="button">Resize grid</button>
+    </div>
+
+    <div class="js-grid-container section-grid"></div>
     <script src="sketch.js"></script>
   </body>
 </html>

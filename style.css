@@ -1,20 +1,47 @@
-.outline {
-  outline: 1px solid black;
+body {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  background: #0000ff2b;
+  text-align: center;
 }
-.grid-container {
+
+.button {
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  background: #3f51b563;
+  border-style: none;
+}
+.radio {
+  margin-left: 20px;
+}
+
+.section-grid {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 1600px;
-  height: 1600px;
-  outline: 1px solid black;
+  width: calc(100vh - 350px);
+  height: calc(100vh - 350px);
+  border-left: 1px solid black;
+  border-top: 1px solid black;
   margin: auto;
+  flex-direction: column;
+  background: white;
 }
-.grid__item {
-  flex: 0 0 100px;
-  margin: 0;
-  padding: 0;
+.grid__row {
+  flex: 1 1 auto;
+  display: flex;
+  border-bottom: 1px solid black;
 }
-.highlight {
-  background-color: black;
+.grid__cell {
+  flex-direction: column;
+  flex: 1 1 auto;
+  border-right: 1px solid black;
+}
+
+.header {
+  font-size: 50px;
+  margin-top: 30px;
+}
+.section-button {
+  margin-top: 50px;
 }
